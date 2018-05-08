@@ -5,11 +5,11 @@ icon: text-width
 author:
   name: Severo Iuliano
   email: severoiuliano@gmail.com
-homepage: https://github.com/severo-iuliano/grav-plugin-imagecreate
+homepage: https://github.com/iusvar/grav-plugin-imagecreate
 demo: http://iusvar.alwaysdata.net/grav/
 keywords: grav, plugin, imagecreate
-bugs: https://github.com/severo-iuliano/grav-plugin-imagecreate/issues
-docs: https://github.com/severo-iuliano/grav-plugin-imagecreate/blob/develop/README.md
+bugs: https://github.com/iusvar/grav-plugin-imagecreate/issues
+docs: https://github.com/iusvar/grav-plugin-imagecreate/blob/develop/README.md
 license: MIT
 
 dependencies:
