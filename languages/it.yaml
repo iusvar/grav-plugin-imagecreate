@@ -1,0 +1,24 @@
+# Italiano
+PLUGIN_IC:
+  TEXT: Testo
+  IMAGE: Immagine
+  STRING: Stringa
+  STRING_HELP: Stringa da scrivere nell'immagine
+  WIDTH: Larghezza
+  WIDTH_HELP: Larghezza dell'immagine in pixel
+  HEIGHT: Altezza
+  HEIGHT_HELP: Altezza dell'immagine in pixel
+  POSITION: Posizione
+  POSITION_HELP: Posizione dell'immagine
+  CENTERED: Centrata (Predefinito)
+  RIGHT: A destra
+  LEFT: A sinistra
+  FONTSIZE: Grandezza carattere
+  FONTSIZE_HELP: Grandezza carattere
+  FOREGROUND_COLOR: Scelta colore in primo piano
+  BACKGROUND_COLOR: Scelta colore di sfondo
+  COLOR_HELP: Colore
+  QUALITY: Qualità
+  QUALITY_HELP: Livello di compressione: da 0 (nessuna compressione) a 9. Il valore predefinito è 6.
+
+  IS_A_JPG: È un file jpg

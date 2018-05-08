@@ -1,0 +1,132 @@
+name: Imagecreate
+version: 0.1.0
+description: Create a new image with a text using TrueType fonts
+icon: text-width
+author:
+  name: Severo Iuliano
+  email: severoiuliano@gmail.com
+homepage: https://github.com/severo-iuliano/grav-plugin-imagecreate
+demo: http://iusvar.alwaysdata.net/grav/
+keywords: grav, plugin, imagecreate
+bugs: https://github.com/severo-iuliano/grav-plugin-imagecreate/issues
+docs: https://github.com/severo-iuliano/grav-plugin-imagecreate/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - shortcode-core
+
+form:
+  validation: strict
+  fields:
+
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    section.text:
+      type: section
+      title: PLUGIN_IC.TEXT
+      underline: true
+      fields:
+
+        parameters.string:
+          type: text
+          label: PLUGIN_IC.STRING
+          help: PLUGIN_IC.STRING_HELP
+          default: email@example.com
+
+        parameters.fontsize:
+          type: text
+          size: x-small
+          label: PLUGIN_IC.FONTSIZE
+          help: PLUGIN_IC.FONTSIZE_HELP
+          default: 10
+          append: px
+          validate:
+            type: int
+            min: 1
+            max: 50
+
+        parameters.foreground_color:
+          type: colorpicker
+          label: PLUGIN_IC.FOREGROUND_COLOR
+          help: PLUGIN_IC.COLOR_HELP
+          highlight: 1
+          default: "rgba(0, 0, 0, 1)"
+
+        parameters.background_color:
+          type: colorpicker
+          label: PLUGIN_IC.BACKGROUND_COLOR
+          help: PLUGIN_IC.COLOR_HELP
+          highlight: 1
+          default: "rgba(255, 255, 255, 1)"
+
+    section.image:
+      type: section
+      title: PLUGIN_IC.IMAGE
+      underline: true
+      fields:
+
+        parameters.width:
+          type: text
+          size: x-small
+          label: PLUGIN_IC.WIDTH
+          help: PLUGIN_IC.WIDTH_HELP
+          default: 210
+          append: px
+          validate:
+            type: int
+            min: 50
+            max: 900
+
+        parameters.height:
+          type: text
+          size: x-small
+          label: PLUGIN_IC.HEIGHT
+          default: 27
+          append: px
+          help: PLUGIN_IC.HEIGHT_HELP
+          validate:
+            type: int
+            min: 20
+            max: 600
+
+        parameters.image_type:
+          type: select
+          size: small
+          label: PLUGIN_QRCODE.IMAGE_TYPE
+          default: png
+          options:
+            gif: GIF
+            jpeg: JPEG
+            png: PNG
+
+        parameters.quality:
+          type: text
+          size: x-small
+          label: PLUGIN_IC.QUALITY
+          default: 6
+          help: PLUGIN_IC.QUALITY_HELP
+          append: 'png: <b>0</b> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  <b>9</b> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> - jpeg: <b>0</b> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> <b>100</b> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
+          validate:
+            type: int
+            min: 0
+            max: 100
+
+        parameters.position:
+          type: select
+          size: medium
+          label: PLUGIN_IC.POSITION
+          help: PLUGIN_IC.POSITION_HELP
+          default: centered
+          options:
+            centered: PLUGIN_IC.CENTERED
+            right: PLUGIN_IC.RIGHT
+            left: PLUGIN_IC.LEFT

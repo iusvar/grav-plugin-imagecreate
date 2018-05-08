@@ -1,0 +1,12 @@
+enabled: true
+
+parameters:
+  string: email@example.com
+  fontsize: 10
+  foreground_color: 'rgba(156, 29, 61, .5)'
+  background_color: 'rgba(249, 242, 244, 1)'
+  width: 210
+  height: 27
+  image_type: png
+  quality: 6
+  position: centered
