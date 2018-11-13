@@ -81,9 +81,9 @@ Below is an example without any parameters, one with only the string parameter a
 
 |  |  |  |
 |---|---|---|
-| `[ic demo="true"]` | ![](images/ic2.png) |
-| `[ic demo="true" string="My text to display"/]` | ![](images/ic3.png) |
-| `[ic demo="true" string="Hi GRAV people!" width="520" height="150" position="centered" fontsize="40" fcolor="006300" bcolor="f0f000" falpha="0.5" balpha="1" quality="6"]` | ![](images/ic4.png) |
+| `[ic]` | ![](images/ic2.png) |
+| `[ic string="My text to display"/]` | ![](images/ic3.png) |
+| `[ic string="Hi GRAV people!" width="520" height="150" position="centered" fontsize="40" fcolor="006300" bcolor="f0f000" falpha="0.5" balpha="1" quality="6"]` | ![](images/ic4.png) |
 
 ## Credits
 
