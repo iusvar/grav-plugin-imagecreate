@@ -1,5 +1,5 @@
 name: Imagecreate
-version: 0.1.0
+version: 0.2.0
 description: Create a new image with a text using TrueType fonts
 icon: text-width
 author:
@@ -30,6 +30,15 @@ form:
       validate:
         type: bool
 
+    truetype:
+      type: select
+      classes: fancy
+      label: PLUGIN_IC.TRUETYPE
+      help: PLUGIN_IC.TRUETYPE_HELP
+      data-options@: '\Grav\Plugin\ImagecreatePlugin::listFonts'
+      validate:
+        required: true
+        
     section.text:
       type: section
       title: PLUGIN_IC.TEXT
@@ -101,7 +110,7 @@ form:
         parameters.image_type:
           type: select
           size: small
-          label: PLUGIN_QRCODE.IMAGE_TYPE
+          label: PLUGIN_IC.IMAGE_TYPE
           default: png
           options:
             gif: GIF

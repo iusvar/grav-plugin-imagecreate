@@ -1,25 +1,25 @@
 # English
 PLUGIN_IC:
-
+  TRUETYPE: TrueType Font
+  TRUETYPE_HELP: Select the truetype font
   TEXT: Text
-  IMAGE: Image
   STRING: String
   STRING_HELP: String to put in the picture
+  FONTSIZE: Font Size
+  FONTSIZE_HELP: Font Size
+  FOREGROUND_COLOR: Foreground Color
+  COLOR_HELP: Color Help
+  BACKGROUND_COLOR: Background Color
+  IMAGE: Image
   WIDTH: Width
   WIDTH_HELP: Image Width in pixels
   HEIGHT: Height
   HEIGHT_HELP: Image Height in pixels
+  IMAGE_TYPE: Image File Type
+  QUALITY: Quality
+  QUALITY_HELP: Compression level: For PNG format from 0 (no compression) to 9, for JPEG format from 0 (worst quality, smaller file) to 100 (best quality, biggest file).
   POSITION: Position
   POSITION_HELP: Position of the image
   CENTERED: Centered (Default)
   RIGHT: Right
   LEFT: Left
-  FONTSIZE: Font Size
-  FONTSIZE_HELP: Font Size
-  FOREGROUND_COLOR: Foreground Color
-  BACKGROUND_COLOR: Background Color
-  COLOR_HELP: Color Help
-  QUALITY: Quality
-  QUALITY_HELP: Compression level: For PNG format from 0 (no compression) to 9, for JPEG format from 0 (worst quality, smaller file) to 100 (best quality, biggest file).
-
-  IS_A_JPG: It is a jpg file

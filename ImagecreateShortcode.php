@@ -79,11 +79,14 @@ class ImagecreateShortcode extends Shortcode
 
         $output = '';
 
+        $font = $this->config->get('plugins.imagecreate.truetype');
+        
         // Set the enviroment variable for GD
-        putenv('GDFONTPATH=' . realpath('./user/plugins/imagecreate/fonts/'));
-
-        // Name the font to be used, unique for now
-        $this->fontname = 'Capriola-Regular';
+        $path = realpath( dirname(__FILE__) .'/fonts' );
+        putenv( 'GDFONTPATH='. $path );
+        
+        // Name the font to be used
+        $this->fontname = getenv('GDFONTPATH') .DS. $font;
 
         // Calculates and returns the bounding box in pixels for a FreeType text.
         $box = imageftbbox( $fontsize, 0, $this->fontname, $string );

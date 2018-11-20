@@ -92,6 +92,6 @@ To work the plugin requires a [shortcode-code plugin](https://github.com/getgrav
 ## To Do
 
 - [ ] Verify placement of text within the image area when the `angle` is different from zero
-- [ ] Add new fonts
+- [X] Add new fonts
 - [ ] Create an image with text from an existing image from a file or URL
 

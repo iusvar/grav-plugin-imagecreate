@@ -1,7 +1,10 @@
 <?php
 namespace Grav\Plugin;
 
+use Grav\Common\Grav;
 use Grav\Common\Plugin;
+use Grav\Common\Utils;
+use Grav\Common\Cache;
 use RocketTheme\Toolbox\Event\Event;
 
 /**
@@ -30,5 +33,22 @@ class ImagecreatePlugin extends Plugin
     public function onShortcodeHandlers(Event $e)
     {
         $this->grav['shortcode']->registerShortcode('ImagecreateShortcode.php', __DIR__);
+    }
+
+    public static function listFonts()
+    {
+      $fonts = [];
+      $path = Grav::instance()['locator']->findResource('plugins://imagecreate/fonts');
+
+      foreach (new \DirectoryIterator($path) as $file) {
+        if ($file->isDir() || $file->isDot() || Utils::startsWith($file->getFilename(), '.')) {
+          continue;
+        }
+        $font = $file->getBasename('.tff');
+        $fonts[$font] = $font;
+      }
+      asort($fonts);
+Cache::clearCache('standard');
+      return $fonts;
     }
 }
