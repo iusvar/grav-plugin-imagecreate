@@ -1,0 +1,25 @@
+# Czech (by Vít Petira, petira.cz)
+PLUGIN_IC:
+  TRUETYPE: Písmo TrueType
+  TRUETYPE_HELP: Vyberte písmo typu TrueType
+  TEXT: Text
+  STRING: Řetězec
+  STRING_HELP: Řetězec vložený do obrázku
+  FONTSIZE: Velikost písma
+  FONTSIZE_HELP: Velikost písma
+  FOREGROUND_COLOR: Barva popředí
+  COLOR_HELP: Použitá barva
+  BACKGROUND_COLOR: Barva pozadí
+  IMAGE: Obrázek
+  WIDTH: Šířka
+  WIDTH_HELP: Šířka obrázku v pixelech
+  HEIGHT: Výška
+  HEIGHT_HELP: Výška obrázku v pixelech
+  IMAGE_TYPE: Typ souboru obrázku
+  QUALITY: Kvalita
+  QUALITY_HELP: Úroveň komprese: Pro formát PNG od 0 (bez komprese) do 9, pro formát JPEG od 0 (nejhorší kvalita, nejmenší soubor) do 100 (nejlepší kvalita, největší soubor).
+  POSITION: Umístění
+  POSITION_HELP: Umístění řetězce v obrázku
+  CENTERED: Uprostřed (výchozí)
+  RIGHT: Vpravo
+  LEFT: Vlevo
